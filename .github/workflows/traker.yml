@@ -31,7 +31,7 @@ jobs:
           cmd: install 
 
       # Runs a set of commands using the runners shell
-      - name: Build React App
+      - name: Build expense_traker
         run: yarn build
       - name: Install Surge
         run: npm install --global surge
