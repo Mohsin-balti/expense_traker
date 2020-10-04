@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import {parent} from './new/parent'
+import {Header} from './Componants/Header';
+import {Balance} from './Componants/Balance'
+import {Incomeexpense} from './Componants/Incomeexpense'
+import {TransactionList} from './Componants/TransactionList'
+import { AddTransaction } from './Componants/AddTransaction';
+import {moh}   from './Componants/moh';
+function App()
+{ return(
+  <div>
+    <Header/>
+    <div className="container">
+      <Balance/>
+      <parent/>
+      <Incomeexpense/>
+      <TransactionList/>
+      <AddTransaction/>
+       <moh/>
     </div>
-  );
-}
+  </div>
+);
 
+}
 export default App;
