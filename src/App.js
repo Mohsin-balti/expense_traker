@@ -10,8 +10,9 @@ import {moh}   from './Componants/moh';
 function App()
 { return(
   <div>
-    <Header/>
+   
     <div className="container">
+    <Header/>
       <Balance/>
       <parent/>
       <Incomeexpense/>
